@@ -124,7 +124,10 @@ fi
 --enable-demuxer=ogg \
 --enable-demuxer=wav \
 --enable-muxer=ogg \
---enable-muxer=opus
+--enable-muxer=opus || (
+    cat ffbuild/config.log
+    exit 1
+)
 
 make -j4
 make -j4 install
