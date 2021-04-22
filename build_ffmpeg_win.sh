@@ -6,6 +6,7 @@ popd > /dev/null
 
 pacman --noconfirm -Sy
 pacman --noconfirm -S msys/make
+pacman --noconfirm -S mingw-w64-i686-gcc-libs
 pacman --noconfirm -S mingw64/mingw-w64-x86_64-opus
 pacman --noconfirm -S diffutils
 pacman --noconfirm -S pkg-config
